@@ -16,24 +16,17 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
-
   <img src="logo.svg"/>
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <strong> An android ui component that adds gradient backdrop to your collapsing appbar</strong>
+    <br/>
+    <a href="https://github.com/othneildrew/Best-README-Template">Sample Apk</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/snehilrx/ShineBar/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/snehilrx/ShineBar/issues">Request Feature</a>
   </p>
 </div>
 
@@ -45,23 +38,15 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -69,36 +54,13 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+This project started as the way for me to learn the new AGSL shader for android. You can read more about AGSL shader ![here](https://developer.android.com/develop/ui/views/graphics/agsl)
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Since alsl is support for android 13 and above, this project was rewritten in glsl. 
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The main idea behind this project was to show a gradient backdrop to collapsing appbar which responds to the scroll change. The backdrop provides add an immersive experience to the app.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+<img width="400px" src="https://user-images.githubusercontent.com/7668602/210174320-3fc571f5-717b-4bed-af3e-6b345e642e90.gif"/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,62 +69,141 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
+Add this to your `app/build.gradle` file.
+```  
+  implementation com.snehil:shinebar:1.0.0
+```
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Extend your application base theme with parent as `Theme.Material3.DayNight.ShineBar`
+```xml
+  <style name="Theme.ShineBar" parent="Theme.Material3.DayNight.ShineBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+   </style>
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+To add the shinebar to your `layout.xml` file
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```xml
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:fitsSystemWindows="true">
+
+        <com.snehil.shinebar.Shinebar
+            android:id="@+id/shinebar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false"
+            app:layout_behavior="com.snehil.shinebar.Shinebar$ShinebarBehaviour" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                style="?attr/collapsingToolbarLayoutLargeStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:titleCollapseMode="scale"
+                app:contentScrim="@android:color/transparent"
+                app:statusBarScrim="@android:color/transparent"
+                app:toolbarId="@id/toolbar">
+
+                <com.snehil.shinebar.ShineToolBar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/transparent"
+                    app:elevation="0dp"
+                    app:layout_collapseMode="pin" />
 
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-<!-- ROADMAP -->
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:includeFontPadding="true"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="@string/main_quote"
+                        app:autoSizeMaxTextSize="19sp"
+                        app:autoSizeMinTextSize="12sp"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/cardView"
+                        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginBottom="24dp"
+                        app:cardCornerRadius="32dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <VideoView
+                            android:id="@+id/videoView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.42" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+  <include
+    layout="your content layout"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+```
+
+To make your app immersive call `makeAppbarImmersive`
+```kotlin   
+shinebarInstance.makeAppbarImmersive(this, binding.root)
+```
+
+To customize the start color and end color of the gradient backdrop
+
+```kotlin
+shinebarInstance.apply {
+  setStartColor(it.first)
+  setEndColor(it.second)
+}
+```
+
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+[ ] Publish this library to maven central.
+[ ] Publish an agsl verion for android 13 and above.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,29 +239,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - snehil - snehil101@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Project Link: [https://github.com/snehilrx/ShineBar](https://github.com/snehilrx/ShineBar)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
