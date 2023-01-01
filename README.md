@@ -202,8 +202,9 @@ shinebarInstance.apply {
 
 ## Roadmap
 
-[ ] Publish this library to maven central.
-[ ] Publish an agsl verion for android 13 and above.
+- [ ] Publish this library to maven central.
+
+- [ ] Publish an agsl verion for android 13 and above.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
