@@ -1,15 +1,30 @@
-<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-      .logo {
-      background-image: -webkit-linear-gradient(0deg,var(--orange10),var(--yellow10),var(--green10) 56%,var(--blue10) 56.1%,var(--pink10),var(--red10));
-      }
+			      .logo {
+				--blue10:var(--color-106);--green10:var(--color-130);--orange10:var(--color-142);
+				--pink10:var(--color-154);--purple10:var(--color-166);--red10:var(--color-178);
+				--yellow10:var(--color-190);
+				--color-106:hsl(209, 100%, 60.6%);
+				--color-130:hsl(151, 49.3%, 46.5%);
+				--color-142:hsl(24, 100%, 58.5%);
+				--color-154:hsl(323, 72.8%, 59.2%);
+				--color-166:hsl(273, 57.3%, 59.1%);
+				--color-178:hsl(358, 85.3%, 64.0%);
+				--color-190:hsl(54, 100%, 68.0%);
+				width: 100%;
+				  height: 100%;
+				  background-clip: text;
+				  font-size: 100px;
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+			      	  background: -webkit-linear-gradient(0deg,var(--orange10),var(--yellow10),var(--green10) 56%,var(--blue10) 56.1%,var(--pink10),var(--red10));
+			  	  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			      }
 			</style>
-      			<div class="container">
-				
-  <h1 align="center" class="logo">Shinebar</h1>
-			</div>
+      			<h1 align="center" class="logo">Shinebar</h1>
       		</div>
 	</foreignObject>
 </svg>
