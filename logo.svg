@@ -1,0 +1,15 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+      .logo {
+      background-image: -webkit-linear-gradient(0deg,var(--orange10),var(--yellow10),var(--green10) 56%,var(--blue10) 56.1%,var(--pink10),var(--red10));
+      }
+			</style>
+      			<div class="container">
+				
+  <h1 align="center" class="logo">Shinebar</h1>
+			</div>
+      		</div>
+	</foreignObject>
+</svg>
