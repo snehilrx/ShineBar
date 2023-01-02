@@ -69,7 +69,7 @@ The main idea behind this project was to show a gradient backdrop to collapsing 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Add this to your `app/build.gradle` file.
+Add this to your `app/build.gradle` file. (TODO)
 ```  
   implementation com.snehil:shinebar:1.0.0
 ```
