@@ -6,8 +6,7 @@ import android.widget.MediaController
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
-import com.snehil.shinebar.demo.R
-import com.snehil.shinebar.demo.databinding.ActivityMainBinding
+import io.github.snehilrx.shinebar.demo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
