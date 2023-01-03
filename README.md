@@ -22,7 +22,7 @@
   <p align="center">
     <strong> An android ui component that adds gradient backdrop to your collapsing appbar</strong>
     <br/>
-    <a href="https://github.com/othneildrew/Best-README-Template">Sample Apk</a>
+    <a href="https://raw.githubusercontent.com/snehilrx/ShineBar/master/app/release/app-release.apk">Sample Apk</a>
     ·
     <a href="https://github.com/snehilrx/ShineBar/issues">Report Bug</a>
     ·
@@ -69,7 +69,7 @@ The main idea behind this project was to show a gradient backdrop to collapsing 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Add this to your `app/build.gradle` file.
+Add this to your `app/build.gradle` file. (TODO)
 ```  
   implementation com.snehil:shinebar:1.0.0
 ```
@@ -202,8 +202,9 @@ shinebarInstance.apply {
 
 ## Roadmap
 
-[ ] Publish this library to maven central.
-[ ] Publish an agsl verion for android 13 and above.
+- [ ] Publish this library to maven central.
+
+- [ ] Publish an agsl verion for android 13 and above.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,32 +251,16 @@ Project Link: [https://github.com/snehilrx/ShineBar](https://github.com/snehilrx
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/snehilrx/ShineBar.svg?style=for-the-badge
+[contributors-url]: https://github.com/snehilrx/ShineBar/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/snehilrx/ShineBar.svg?style=for-the-badge
+[forks-url]: https://github.com/snehilrx/ShineBar/network/members
+[stars-shield]: https://img.shields.io/github/stars/snehilrx/ShineBar.svg?style=for-the-badge
+[stars-url]: https://github.com/snehilrx/ShineBar/stargazers
+[issues-shield]: https://img.shields.io/github/issues/snehilrx/ShineBar.svg?style=for-the-badge
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/snehilrx/ShineBar.svg?style=for-the-badge
+[license-url]: https://github.com/snehilrx/ShineBar/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+[linkedin-url]: https://www.linkedin.com/in/snehilrx/
+
