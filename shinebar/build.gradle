@@ -2,10 +2,11 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
+    id 'signing'
 }
 
 android {
-    namespace 'com.snehil.shinebar'
+    namespace 'io.github.snehilrx'
     compileSdk 33
 
     defaultConfig {
@@ -44,7 +45,7 @@ tasks.create("publish_to_maven") {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = 'com.snehil'
+                groupId = 'io.github.snehilrx'
                 artifactId = 'shinebar'
                 version = '1.0'
 

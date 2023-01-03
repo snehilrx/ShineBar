@@ -1,4 +1,4 @@
-package com.snehil.shinebar.demo
+package io.github.snehilrx.shinebar.demo
 
 import android.content.res.Resources
 import android.graphics.drawable.GradientDrawable

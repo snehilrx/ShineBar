@@ -1,9 +1,9 @@
-package com.snehil.shinebar
+package io.github.snehilrx.shinebar
 
 import android.content.Context
 import android.util.AttributeSet
 import com.google.android.material.appbar.MaterialToolbar
-import com.snehil.shinebar.Utils.getStatusBarHeight
+import io.github.snehilrx.shinebar.Utils.getStatusBarHeight
 import kotlin.math.roundToInt
 
 class ShineToolBar : MaterialToolbar {

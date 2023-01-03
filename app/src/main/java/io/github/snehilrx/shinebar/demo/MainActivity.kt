@@ -1,4 +1,4 @@
-package com.snehil.shinebar.demo
+package io.github.snehilrx.shinebar.demo
 
 import android.graphics.Color.rgb
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.MediaController
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
+import com.snehil.shinebar.demo.R
 import com.snehil.shinebar.demo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

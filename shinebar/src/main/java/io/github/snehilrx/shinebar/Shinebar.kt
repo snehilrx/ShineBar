@@ -1,4 +1,4 @@
-package com.snehil.shinebar
+package io.github.snehilrx.shinebar
 
 import android.app.Activity
 import android.content.Context
@@ -21,7 +21,9 @@ import com.appspell.shaderview.ShaderView
 import com.appspell.shaderview.gl.params.ShaderParams
 import com.appspell.shaderview.gl.params.ShaderParamsBuilder
 import com.google.android.material.appbar.AppBarLayout
-import com.snehil.shinebar.Utils.getStatusBarHeight
+import io.github.snehilrx.BuildConfig
+import io.github.snehilrx.R
+import io.github.snehilrx.shinebar.Utils.getStatusBarHeight
 import kotlin.math.abs
 
 

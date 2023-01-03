@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.snehil.shinebar.demo'
+    namespace 'io.github.snehilrx.shinebar.demo'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.snehil.shinebar.demo"
+        applicationId "io.github.snehilrx.shinebar.demo"
         minSdk 21
         targetSdk 33
         versionCode 1

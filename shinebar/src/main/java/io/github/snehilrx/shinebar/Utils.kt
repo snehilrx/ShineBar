@@ -1,4 +1,4 @@
-package com.snehil.shinebar
+package io.github.snehilrx.shinebar
 
 import android.annotation.SuppressLint
 import android.content.res.Resources
