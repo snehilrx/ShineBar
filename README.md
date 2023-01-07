@@ -240,7 +240,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - snehil - snehil101@gmail.com
+snehil - snehil101@gmail.com
 
 Project Link: [https://github.com/snehilrx/ShineBar](https://github.com/snehilrx/ShineBar)
 
