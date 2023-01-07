@@ -96,12 +96,12 @@ To add the shinebar to your `layout.xml` file
         android:background="@color/black"
         android:fitsSystemWindows="true">
 
-        <com.snehil.shinebar.Shinebar
+        <io.github.snehilrx.shinebar.Shinebar
             android:id="@+id/shinebar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="false"
-            app:layout_behavior="com.snehil.shinebar.Shinebar$ShinebarBehaviour" />
+            app:layout_behavior="io.github.snehilrx.shinebar.Shinebar$ShinebarBehaviour" />
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
@@ -121,7 +121,7 @@ To add the shinebar to your `layout.xml` file
                 app:statusBarScrim="@android:color/transparent"
                 app:toolbarId="@id/toolbar">
 
-                <com.snehil.shinebar.ShineToolBar
+                <cio.github.snehilrx.shinebar.ShineToolBar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
