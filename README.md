@@ -54,7 +54,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This project started as the way for me to learn the new AGSL shader for android. You can read more about AGSL shader ![here](https://developer.android.com/develop/ui/views/graphics/agsl)
+This project started as the way for me to learn the new AGSL shader for android. You can read more about AGSL shader 
+https://developer.android.com/develop/ui/views/graphics/agsl
 
 Since alsl is support for android 13 and above, this project was rewritten in glsl. 
 
