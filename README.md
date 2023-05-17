@@ -72,7 +72,7 @@ The main idea behind this project was to show a gradient backdrop to collapsing 
 
 Add this to your `app/build.gradle` file.
 ```  
-  implementation io.github.snehilrx:shinebar:1.0.0
+  implementation "io.github.snehilrx:shinebar:1.0.0"
 ```
 <!-- USAGE EXAMPLES -->
 ## Usage
